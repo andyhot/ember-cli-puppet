@@ -1,4 +1,4 @@
-ember-cli-puppet
+ember-cli-puppet [![Build Status](https://travis-ci.org/andyhot/ember-cli-puppet.svg?branch=master)](https://travis-ci.org/andyhot/ember-cli-puppet)
 ==============================================================================
 
 Turn components into puppets. Calling their actions or even functions from parent components / controllers.
