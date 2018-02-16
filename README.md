@@ -1,7 +1,7 @@
 ember-cli-puppet
 ==============================================================================
 
-[Short description of the addon.]
+Turn components into puppets. Calling their actions or even functions from parent components / controllers.
 
 Installation
 ------------------------------------------------------------------------------
@@ -14,7 +14,24 @@ ember install ember-cli-puppet
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+Assuming you mix in ember-cli-puppet/mixins/puppet into `your-component`, this addon allows you to do:
+```
+{{your-component onPuppet=(action (mut instance))}}
+
+<button {{action (puppet-call instance 'func_name')}}>Call the func_name function of the component</button>
+<button {{action (puppet-action instance 'act_name')}}>Invoke the act_name action of the component</button>
+```
+
+Alternatives
+------------------------------------------------------------------------------
+
+* ember-inbound-actions - okay but unmaintained
+* Modifying parameters and having the component monitor for changes - pure ugliness
+
+FAQ
+------------------------------------------------------------------------------
+
+* Doesn't this break the DDAU principle? Absolutely! Use at your own risk.
 
 
 Contributing

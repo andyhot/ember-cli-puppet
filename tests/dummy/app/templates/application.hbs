@@ -1,3 +1,7 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Welcome to ember-cli-puppet</h2>
 
-{{outlet}}
+<div data-test>
+  {{puppet-counter count=2 onPuppet=(action (mut instance))}}
+</div>
+<button data-call {{action (puppet-call instance 'inc')}}></button>
+<button data-action {{action (puppet-action instance 'inc10')}}></button>
