@@ -13,5 +13,8 @@ module('Acceptance | puppet call', function(hooks) {
 
     await click('button[data-call]');
     assert.equal(find('div[data-test]').textContent.trim(), 'me:3');
+
+    // make sure puppet-call doesn't fail when component instance is not set
+    await click('button[data-call-invalid]');
   });
 });

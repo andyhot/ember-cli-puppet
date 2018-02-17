@@ -13,5 +13,8 @@ module('Acceptance | puppet action', function(hooks) {
 
     await click('button[data-action]');
     assert.equal(find('div[data-test]').textContent.trim(), 'me:12');
+
+    // make sure puppet-action doesn't fail when component instance is not set
+    await click('button[data-action-invalid]');
   });
 });

@@ -3,5 +3,8 @@
 <div data-test>
   {{puppet-counter count=2 onPuppet=(action (mut instance))}}
 </div>
-<button data-call {{action (puppet-call instance 'inc')}}></button>
-<button data-action {{action (puppet-action instance 'inc10')}}></button>
+<button data-call {{action (puppet-call instance 'inc')}}>Inc</button>
+<button data-action {{action (puppet-action instance 'inc10')}}>Inc 10</button>
+
+<button data-call-invalid {{action (puppet-call instance_empty 'inc')}}>Invalid Call</button>
+<button data-action-invalid {{action (puppet-action instance_empty 'inc10')}}>Invalid Action</button>
