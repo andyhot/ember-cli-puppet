@@ -19,7 +19,7 @@ Assuming you mix in ember-cli-puppet/mixins/puppet into `your-component`, this a
 {{your-component onPuppet=(action (mut instance))}}
 
 <button {{action (puppet-call instance 'func_name')}}>Call the func_name function of the component</button>
-<button {{action (puppet-action instance 'act_name')}}>Invoke the act_name action of the component</button>
+<button {{action (puppet-send instance 'act_name')}}>Invoke the act_name action of the component</button>
 ```
 
 Alternatives
