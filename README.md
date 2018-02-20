@@ -32,6 +32,7 @@ FAQ
 ------------------------------------------------------------------------------
 
 * Doesn't this break the DDAU principle? Absolutely! Use at your own risk.
+* When should I handle the `offPuppet` event? If you modify a controller's state during the `onPuppet` event, then it makes sense to clean up during `offPuppet`. You can skip that for components since they clean up after themselves once they get destroyed.
 
 
 Contributing
