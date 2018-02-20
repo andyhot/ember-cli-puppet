@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-puppet",
   "version": "0.1.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Send component actions from parent components / controllers.",
   "keywords": [
     "ember-addon"
   ],
