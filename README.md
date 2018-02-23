@@ -25,7 +25,7 @@ Assuming you mix in ember-cli-puppet/mixins/puppet into `your-component`, this a
 Alternatives
 ------------------------------------------------------------------------------
 
-* ember-inbound-actions - okay but unmaintained
+* ember-component-inbound-actions - okay but can lead to rerender issues
 * Modifying parameters and having the component monitor for changes - pure ugliness
 
 FAQ
